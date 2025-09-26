@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Example</title>
+</head>
+<body>
+  <form action="/submit" method="post">
+    <p>
+      <label> Name: </label>
+      <input type="text" name="name" required />
+    </p>
+    <p><label> Email </label> <input type="text" /></p>
+    <p>
+      <label> Message: </label>
+      <textarea name="message" required></textarea>
+    </p>
+    <p>
+      <button>Submit</button>
+    </p>
+    <input name="form_id" value="contact_form_123" />
+    <button>
+      <a href="https://example.com/privacy">Privacy Policy</a>
+    </button>
+    <p>
+      <label> Enter your date of birth: </label>
+      <input type="date" name="dob" />
+    </p>
+    <p>
+      <label> Select your country: </label>
+      <select>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="au">Australia</option>
+        <option value="in">India</option>
+      </select>
+    </p>
+    <button type="reset">Reset</button>
+    <p>
+      <label> Choose the color: </label>
+      <input type="color" name="favcolor" value="#ff0000" />
+    </p>
+    <p>
+      <label> Select a time: </label>
+      <input type="time" name="alarm" />
+    </p>
+    <p>
+      <label> Upload a file: </label>
+      <input type="file" name="fileupload" />
+    </p>
+  </form>
+</body>
